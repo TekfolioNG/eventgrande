@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg: #ffffff;
+    --color-text-main: #0f172a;    /* Deep slate for crisp reading */
+    --color-text-muted: #475569;   /* Soft grey for body text to let elements breathe */
+    --color-brand-primary: #0284c7;/* Petabiz Sky Blue (used sparingly) */
+    --color-brand-dark: #0f172a;   /* Structural blue-grey */
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Structural section breathing spaces */
+  section {
+    padding-top: 6rem;    /* Generous vertical padding to let pages breathe */
+    padding-bottom: 6rem;
+  }
+}

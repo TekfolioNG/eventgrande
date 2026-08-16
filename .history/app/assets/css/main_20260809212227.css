@@ -1,0 +1,22 @@
+/* app/assets/css/main.css */
+@layer base {
+  :root {
+    --color-bg: #ffffff;
+    --color-text-main: #0f172a;
+    --color-text-muted: #64748b;
+    --color-accent: #0284c7;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.8;
+  }
+
+  /* Structural section breathing spaces - ensuring no layout feels crowded */
+  section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
