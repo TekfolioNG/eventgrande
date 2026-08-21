@@ -6,13 +6,13 @@ import safetyImg from '~/assets/img/drone.webp'
 import trainingImg from '~/assets/img/training.webp'
 
 const slides = [
-  {
-    headline: 'Enterprise Infrastructure, Engineered to Perform',
-    description: 'Certified network engineers deploy and support enterprise networks and infrastructure, backed by 24/7 global support.',
-    link: '/services',
-    cta: 'Explore Our Services',
-    image: serviceImg
-  },
+  //{
+ //   headline: 'Enterprise Infrastructure, Engineered to Perform',
+ //   description: 'Certified network engineers deploy and support enterprise networks and infrastructure, backed by 24/7 global support.',
+ //   link: '/services',
+ //   cta: 'Explore Our Services',
+  //  image: serviceImg
+ // },
   {
     headline: 'Powering Enterprise Innovation with Trusted Technology',
     description: 'Converged infrastructure and enterprise networking; authentic OEM solutions from Oracle, Hitachi, Dell EMC, and more.',

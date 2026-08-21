@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   components: [
     { path: '~/components/global', prefix: 'Global' },
     { path: '~/components/home', prefix: 'Home' },
-    { path: '~/components/ourservices', prefix: 'OurServices' },
+   // { path: '~/components/ourservices', prefix: 'OurServices' },
     { path: '~/components/products', prefix: 'Products' },
     { path: '~/components/safety', prefix: 'Safety' },
     { path: '~/components/training', prefix: 'Training' }

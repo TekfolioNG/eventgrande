@@ -17,9 +17,4 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* Structural section breathing spaces */
-  section {
-    padding-top: 6rem;    /* Generous vertical padding to let pages breathe */
-    padding-bottom: 6rem;
-  }
 }

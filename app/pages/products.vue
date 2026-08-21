@@ -3,8 +3,8 @@
 
 <template>
   <div class="space-y-0">
-    <SafetyHero />
-    <SafetyCatalog />
+    <ProductsHero />
+    <ProductsCatalog />
     <HomeCta />
   </div>
 </template>
