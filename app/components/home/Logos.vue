@@ -9,34 +9,30 @@
     <div class="relative mt-14">
       <div class="partner-fade-mask overflow-hidden">
         <div class="flex w-max space-x-8 partners-scroll-right">
-          <div
-            v-for="(logo, index) in [...firstRow, ...firstRow]"
-            :key="`row1-${index}`"
-            class="min-w-[150px] p-2"
-          >
-            <img
-              :src="logo.src"
-              :alt="logo.name"
+          <div v-for="(logo, index) in [...firstRow, ...firstRow]" :key="`row1-${index}`" class="min-w-[150px] p-2">
+            <img :src="logo.src" :alt="logo.name"
               class="h-12 sm:h-16 object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100"
-              loading="lazy"
-            >
+              loading="lazy">
           </div>
         </div>
       </div>
 
       <div class="partner-fade-mask overflow-hidden mt-6">
         <div class="flex w-max space-x-8 partners-scroll-left">
-          <div
-            v-for="(logo, index) in [...secondRow, ...secondRow]"
-            :key="`row2-${index}`"
-            class="min-w-[150px] p-2"
-          >
-            <img
-              :src="logo.src"
-              :alt="logo.name"
+          <div v-for="(logo, index) in [...secondRow, ...secondRow]" :key="`row2-${index}`" class="min-w-[150px] p-2">
+            <img :src="logo.src" :alt="logo.name"
               class="h-12 sm:h-16 object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100"
-              loading="lazy"
-            >
+              loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="partner-fade-mask overflow-hidden mt-6">
+        <div class="flex w-max space-x-8 partners-scroll-right">
+          <div v-for="(logo, index) in [...thirdRow, ...thirdRow]" :key="`row3-${index}`" class="min-w-[150px] p-2">
+            <img :src="logo.src" :alt="logo.name"
+              class="h-12 sm:h-16 object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100"
+              loading="lazy">
           </div>
         </div>
       </div>
@@ -45,6 +41,9 @@
 </template>
 
 <script setup>
+import axis from '~/assets/img/axis.png'
+import bosch from '~/assets/img/bosch.png'
+import commscope from '~/assets/img/commscope.png'
 import dell from '~/assets/img/dell.png'
 import eset from '~/assets/img/eset.png'
 import fortinet from '~/assets/img/fortinet.png'
@@ -58,6 +57,7 @@ import microsoft from '~/assets/img/microsoft.png'
 import netapp from '~/assets/img/netapp.png'
 import oracle from '~/assets/img/oracle.png'
 import paloalto from '~/assets/img/paloalto.png'
+import pelco from '~/assets/img/pelco.png'
 import quest from '~/assets/img/quest.png'
 import vertiv from '~/assets/img/vertiv.png'
 import vmware from '~/assets/img/vmware.png'
@@ -83,6 +83,13 @@ const secondRow = [
   { name: 'Fortinet', src: fortinet },
   { name: 'Palo Alto Networks', src: paloalto }
 ]
+
+const thirdRow = [
+  { name: 'CommScope', src: commscope },
+  { name: 'Bosch', src: bosch },
+  { name: 'Pelco', src: pelco },
+  { name: 'Axis Communications', src: axis }
+]
 </script>
 
 <style scoped>
@@ -92,13 +99,23 @@ const secondRow = [
 }
 
 @keyframes partners-scroll-left {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes partners-scroll-right {
-  from { transform: translateX(-50%); }
-  to { transform: translateX(0); }
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 .partners-scroll-left {
@@ -115,6 +132,7 @@ const secondRow = [
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .partners-scroll-left,
   .partners-scroll-right {
     animation: none;
