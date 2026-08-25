@@ -21,7 +21,7 @@ function toggleMenu() {
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur">
+  <header class="sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="grid grid-cols-2 md:grid-cols-[auto_1fr_auto] items-center h-20">
 
@@ -33,9 +33,9 @@ function toggleMenu() {
             aria-label="Petabiz Technology — Home"
           >
             <img
-              src="~/assets/img/Petabiz_logo.png"
+              src="~/assets/img/Event_Grande.png"
               alt="Petabiz Technology"
-              class="h-8 md:h-9 w-auto"
+              class="h-18 md:h-20 w-auto"
             >
           </NuxtLink>
         </div>

@@ -1,6 +1,6 @@
 <!-- app/components/global/AppFooter.vue -->
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed } from 'vue';
 
 const currentYear = computed(() => new Date().getFullYear())
 
@@ -42,7 +42,7 @@ const oemPartners = [
             class="inline-block rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60"
             aria-label="Petabiz Technology — Home"
           >
-            <img class="h-12 w-auto mx-auto md:mx-0 object-contain" src="~/assets/img/Petabiz_logo.png" alt="Petabiz Nigeria" />
+            <img class="h-24 w-auto mx-auto md:mx-0 object-contain" src="~/assets/img/Event_Grande.png" alt="Petabiz Nigeria" />
           </NuxtLink>
           <div class="space-y-3">
             <!-- #1: header color -> secondary orange (placeholder orange-500, swap for exact brand hex) -->

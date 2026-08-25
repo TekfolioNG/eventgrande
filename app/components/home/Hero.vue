@@ -1,8 +1,7 @@
 <!-- app/components/home/Hero.vue -->
 <script setup>
-import serviceImg from '~/assets/img/networkengineer.webp'
-import solutionsImg from '~/assets/img/networkcables.webp'
 import safetyImg from '~/assets/img/drone.webp'
+import solutionsImg from '~/assets/img/networkcables.webp'
 import trainingImg from '~/assets/img/training.webp'
 
 const slides = [
@@ -65,7 +64,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="relative h-screen w-full overflow-hidden bg-slate-950">
+  <section class="h-screen w-full overflow-hidden">
     <!-- Background images: crossfade + slow Ken Burns zoom -->
     <div
       v-for="(slide, index) in slides"
