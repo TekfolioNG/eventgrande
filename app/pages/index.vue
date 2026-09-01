@@ -26,6 +26,7 @@ useSeoMeta({
   <div class="space-y-0">
     <HomeHero />
     <HomeIntro />
+    <HomeServices />
     <HomeAssurance />
     <HomeLogos />
     <HomeCta />
