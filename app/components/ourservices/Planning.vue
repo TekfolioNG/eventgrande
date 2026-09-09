@@ -1,6 +1,6 @@
 <!-- app/components/services/Planning.vue -->
 <script setup>
-import planningImage from '~/assets/img/about-hero.webp';
+import planningImage from '~/assets/img/services-hero.webp';
 </script>
 
 <template>

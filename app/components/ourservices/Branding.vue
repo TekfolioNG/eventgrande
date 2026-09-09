@@ -1,6 +1,6 @@
 <!-- app/components/services/Branding.vue -->
 <script setup>
-import brandingImage from '~/assets/img/about-hero.webp';
+import brandingImage from '~/assets/img/services-hero3.webp';
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 <!-- app/components/services/Decoration.vue -->
 <script setup>
-import decorationImage from '~/assets/img/about-hero.webp';
+import decorationImage from '~/assets/img/event-hero.webp';
 </script>
 
 <template>
