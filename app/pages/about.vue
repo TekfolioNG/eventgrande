@@ -4,7 +4,10 @@
 <template>
     <div class="space-y-0">
         <AboutHero />
-        <ProductsCatalog />
+        <AboutStory />
+        <AboutDifference />
+        <AboutVisionMission />
+        <AboutValues />
         <HomeCta />
     </div>
 </template>

@@ -13,9 +13,8 @@ export default defineNuxtConfig({
     { path: '~/components/global', prefix: 'Global' },
     { path: '~/components/home', prefix: 'Home' },
     { path: '~/components/about', prefix: 'About' },
-    { path: '~/components/products', prefix: 'Products' },
-    { path: '~/components/safety', prefix: 'Safety' },
-    { path: '~/components/training', prefix: 'Training' },
+    { path: '~/components/ourservices', prefix: 'Services' },
+    { path: '~/components/gallery', prefix: 'Gallery' },
     { path: '~/components/contact', prefix: 'Contact' }
   ],
 
