@@ -18,8 +18,8 @@ const stackedCards = [
         icon: Mail,
         title: 'Email Us',
         description: 'Send us an email and we\'ll respond within 24 hours.',
-        value: 'contact@eventgrande.com',
-        href: 'mailto:contact@eventgrande.com'
+        value: 'contact@eventgrande.org',
+        href: 'mailto:contact@eventgrande.org'
     }
 ]
 </script>

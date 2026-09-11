@@ -106,10 +106,10 @@ const socialLinks = [
           </h3>
           <ul class="mt-5 space-y-3 text-sm">
             <li>
-              <a href="mailto:contact@eventgrande.com"
+              <a href="mailto:contact@eventgrande.org"
                 class="flex items-center justify-center lg:justify-start gap-2 text-slate-400 transition-colors hover:text-sky-300">
                 <Mail class="h-4 w-4 flex-shrink-0" stroke-width="1.75" />
-                contact@eventgrande.com
+                contact@eventgrande.org
               </a>
             </li>
             <li>

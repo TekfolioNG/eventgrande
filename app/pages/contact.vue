@@ -6,6 +6,5 @@
         <ContactHero />
         <ContactInfoCards />
         <ContactForm />
-        <ContactFaq />
     </div>
 </template>
