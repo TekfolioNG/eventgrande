@@ -29,5 +29,10 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: 'cloudflare-pages'
+  },
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag === 'lottie-player'
+    }
   }
 })
