@@ -1,23 +1,23 @@
 <script setup lang="ts">
 
 useSeoMeta({
-  title: 'Petabiz Nigeria Ltd',
-  ogTitle: 'Petabiz Nigeria Ltd',
-  titleTemplate: 'Petabiz Nigeria Ltd',
-  description: 'Global OEM Solutions for Enterprise Success.',
-  ogDescription: 'Global OEM Solutions for Enterprise Success',
+  title: 'Event Grande',
+  ogTitle: 'Event Grande',
+  titleTemplate: 'Event Grande',
+  description: 'Grand designs, styles, stages, and experiences that create lasting memories for you and your guests.',
+  ogDescription: 'Grand designs, styles, stages, and experiences that create lasting memories for you and your guests.',
 
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Petabiz Nigeria Ltd',
-  twitterDescription: 'Global OEM Solutions for Enterprise Success',
+  twitterTitle: 'Event Grande',
+  twitterDescription: 'Grand designs, styles, stages, and experiences that create lasting memories for you and your guests.',
 
   ogImage: {
-    url: 'https://petabiz.com/networkcables.webp',
+    url: 'https://eventgrande.org/event-hero.webp',
     width: 1200,
     height: 630,
-    alt: 'Petabiz Nigeria Ltd - Trsuted Tech Partner'
+    alt: 'Event Grande - Premier Event Management & Decoration'
   },
-  twitterImage: 'https://petabiz.com/networkcables.webp'
+  twitterImage: 'https://eventgrande.org/event-hero.webp'
 })
 
 </script>
