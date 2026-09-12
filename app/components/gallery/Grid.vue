@@ -7,20 +7,45 @@ const categories = [
     { key: 'all', label: 'All' },
     { key: 'corporate', label: 'Corporate Events' },
     { key: 'weddings', label: 'Weddings' },
-    { key: 'venues', label: 'Venues & Cakes' }
+    { key: 'venues', label: 'Birthdays' }
 ]
+
+const CURATED_PER_CATEGORY = 15
 
 const activeCategory = ref('all')
 const visibleCount = ref(24)
 const activeItem = ref(null)
 
+function interleave(groups) {
+    const result = []
+    const maxLength = Math.max(...groups.map((g) => g.length))
+    for (let i = 0; i < maxLength; i++) {
+        for (const group of groups) {
+            if (group[i]) result.push(group[i])
+        }
+    }
+    return result
+}
+
+const curatedAllItems = computed(() => {
+    const groupKeys = categories.filter((c) => c.key !== 'all').map((c) => c.key)
+    const groups = groupKeys.map((key) =>
+        galleryItems.filter((item) => item.category === key).slice(0, CURATED_PER_CATEGORY)
+    )
+    return interleave(groups)
+})
+
 const filteredItems = computed(() => {
-    if (activeCategory.value === 'all') return galleryItems
+    if (activeCategory.value === 'all') return curatedAllItems.value
     return galleryItems.filter((item) => item.category === activeCategory.value)
 })
 
-const visibleItems = computed(() => filteredItems.value.slice(0, visibleCount.value))
-const hasMore = computed(() => visibleCount.value < filteredItems.value.length)
+const isAllTab = computed(() => activeCategory.value === 'all')
+const visibleItems = computed(() => {
+    if (isAllTab.value) return filteredItems.value
+    return filteredItems.value.slice(0, visibleCount.value)
+})
+const hasMore = computed(() => !isAllTab.value && visibleCount.value < filteredItems.value.length)
 
 function setCategory(key) {
     activeCategory.value = key
