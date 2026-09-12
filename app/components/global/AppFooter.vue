@@ -19,7 +19,7 @@ const clientNames = [
   { name: 'Oriflame', href: 'https://www.oriflame.com' },
   { name: 'NLNG', href: 'https://www.nlng.com' },
   { name: 'Gosnacks', href: 'https://gosnacksng.com/' },
-  { name: 'Eazee Conceptz', href: 'https://new.eezeeconceptz.org/' },
+  { name: 'Eezee', href: 'https://new.eezeeconceptz.org/' },
   { name: 'Fiducia', href: 'https://myfiducia.com/' },
   { name: 'Petra By Design', href: 'https://petrabydesign.com/' },
   { name: 'Reg & Gil', href: 'https://www.regandgil.com/' },
